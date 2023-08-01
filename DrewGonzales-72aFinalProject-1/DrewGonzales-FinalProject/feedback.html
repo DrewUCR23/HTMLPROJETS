@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Feedback on Drew Gonzales's Website</title>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+    <link href="mycss.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="MYLOGO.png" alt="Drew Gonzales Logo">
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <nav>
+            <fieldset>
+                <legend>Navigation</legend>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="favlinks.html">Favorite Links</a></li>
+                    <li><a href="resume.html">Drew Gonzales Resume</a></li>
+                    <li><a href="other.html">Engineering And Ai</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </fieldset>
+        </nav>
+
+        <div id="main">
+            <h1>Feedback on Drew Gonzales's Personal Website</h1>
+
+            <!-- Inserting Images with inline CSS for styling -->
+            <div style="text-align: center;">
+                <img src="FEEDBACK.jpg" alt="Feedback Image 1" style="width: 90%; max-width: 500px; border: 3px solid grey; margin-right: 10px; box-shadow: 2px 2px 5px #333;">
+            </div>
+
+            <p>We value your insights! Share your thoughts by completing the form below.</p>
+
+            <form action="response.html" method="get">
+                <div class="form-group">
+                    <fieldset id="feedbackinfo">
+                        <legend>Feedback</legend>
+                        <label for="comments">Comments</label>
+                        <textarea rows="5" name="comments" id="comments" required placeholder="Your comments..."></textarea>
+
+                        <label for="re">Topic</label>
+                        <select name="re" id="re">
+                            <option value="none">Select a Topic</option>
+                            <option value="content">Website Content</option>
+                            <option value="design">Design and Layout</option>
+                            <option value="usability">Usability</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset id="contactinfo">
+                        <legend>Contact Info</legend>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Your name">
+
+                        <div class="contact-methods">
+                            <p>Preferred Contact Method:</p>
+                            <input type="checkbox" name="call" id="call"><label for="call">Call</label>
+                            <input type="checkbox" name="text" id="text"><label for="text">Text</label>
+                            <input type="checkbox" name="email" id="email"><label for="email">Email</label>
+                        </div>
+
+                        <label for="phonenum">Phone</label>
+                        <input type="tel" name="phonenum" id="phonenum" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx">
+
+                        <label for="emailaddy">Email</label>
+                        <input type="email" name="emailaddy" id="emailaddy" placeholder="example@example.com">
+                    </fieldset>
+                </div>
+
+                <p><input type="submit" value="Submit Feedback"></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Drew Gonzales 2023. All rights reserved.
+    </footer>
+</body>
+
+</html>
+

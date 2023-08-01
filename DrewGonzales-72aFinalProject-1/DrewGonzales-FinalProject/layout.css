@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+nav {
+    width: 270px;
+    float: left;
+    height: 770px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+#main {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+fieldset {
+    width: 100%;
+    height: calc(100% - 40px);
+    margin: 0;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-left: 25px;
+}
+
+.floatright {
+    float: right;
+    margin-left: 30px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns .left-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.two-columns .right-column {
+    flex: 1;
+    padding: 10px;
+    margin-left: -60px;  /* Adjust this value to get the desired spacing */
+}
+
+#main h3 {
+    margin-bottom: 2px;  
+}
+
+.two-columns .left-column h2 {
+    margin-bottom: 2px;
+}
+
+.two-columns .right-column h2 {
+    margin-bottom: 2px;
+    margin-left: 60px;  /* Adjust to match the negative margin on the right-column */
+}
